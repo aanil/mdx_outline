@@ -152,7 +152,6 @@ class OutlineProcessor(Treeprocessor):
         wrapper_cls = self.wrapper_cls
 
         for child in list(node):
-        for child in list(node):
             match = pattern.match(child.tag.lower())
 
             if match:
