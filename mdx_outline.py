@@ -148,7 +148,7 @@ __version__ = "1.4.0"
 class OutlineProcessor(Treeprocessor):
     def process_nodes(self, node):
         s = []
-        pattern = re.compile("^h(\d)")
+        pattern = re.compile(r"^h(\d)")
         wrapper_cls = self.wrapper_cls
 
         for child in list(node):
